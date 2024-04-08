@@ -76,6 +76,7 @@ function Order() {
 
 export async function loader({ params }) {
   const order = await getOrder(params.orderId);
+  return order;
 }
 
 export default Order;
